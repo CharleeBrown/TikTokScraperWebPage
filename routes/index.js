@@ -3,8 +3,9 @@ var router = express.Router();
 var tito = require('tiktok-scraper');
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  tito.getUserProfileInfo('*');
   res.render('index', { title: 'Express' });
- tito.user('', function(err,next));
+
 });
 
 module.exports = router;
