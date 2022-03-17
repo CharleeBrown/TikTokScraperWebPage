@@ -4,12 +4,10 @@ block content
   h1= title
   p Welcome to #{title}
   div(id="row")
-    label|Enter Hashtag for Search
-      br
-      input(id="hashtagSearch")
-    label|Enter Music for Search
-      br
-      input(id="musicSearch")
-    label|Enter User for Search
-      br
-      input(id="userSearch")
+    form(method="post" action="/music")
+      label|Select a search type
+      select(id="searchOption")
+        option|Music
+        option|User
+        option|Hashtag
+      input( type="submit" onclick="/music" id="userSearch")
