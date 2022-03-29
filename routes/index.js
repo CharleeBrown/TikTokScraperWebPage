@@ -14,6 +14,16 @@ router.post('/music', function(req, res, next) {
   //  var searchOption = document.getElementById("searchOption");
   //  if(searchOption.value == "Music"){
 	console.log("hello");
+  res.json("test"); 
+//   .find(query)
+//   .sort()
+//   .toArray()
+//   .then((items) => {
+//     res.json(items);
+//     return items;
+//   })
+//   .catch((err) => console.error(`Failed to find documents: ${err}`));
+// });
    
 })
 module.exports = router;
