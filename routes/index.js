@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+let tito = require('tiktok-scraper');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -10,7 +11,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/music', function(req, res, next) {
  
-   //tito.getMusicInfo(req.body.musicSearch)
+   tito.getMusicInfo(req.body.musicSearch)
   //  var searchOption = document.getElementById("searchOption");
   //  if(searchOption.value == "Music"){
 	console.log("hello");
