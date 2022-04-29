@@ -1,15 +1,17 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  div(id="row")
-    form(method="post" action="/music")
-      label|Select a search type
-      select(id="searchOption")
-        option|Music
-        option|User
-        option|Hashtag
-  div(id="row")
-      input(id="searchTerms" type="text" placeholder="E.g. Lil Nas X")
-      button(onclick="/music" id="userSearch")|Search
+  h1|Scraper Page
+  div(id="mainRow" class="row")
+    div(class="row" id="innerRow")
+      div(class="col-sm-2")
+        form(method="post" action="/music")
+          label|Select a search type
+          select(id="searchOption")
+            option|Music
+            option|User
+            option|Hashtag
+    div(class="row" id="innerRow")
+      div(class="col-sm-2")
+        input(id="searchTerms" type="text" placeholder="E.g. Lil Nas X")
+        button(onclick="/music" id="userSearch")|Search

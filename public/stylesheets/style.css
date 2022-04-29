@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: "Caveat" !important;
 }
 
 a {
@@ -16,8 +17,14 @@ select {
   border-radius: 4px;
 }
 
-#row {
+#mainRow {
   padding: 10px;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+#mainRow div {
+  margin: 0 auto;
 }
 
 #searchTerms {
@@ -28,6 +35,18 @@ select {
 #userSearch {
   border-radius: 4px;
   margin-left: 10px;
+}
+
+#innerRow {
+  padding: 20px;
+}
+
+button {
+  margin: 10px !important;
+}
+
+select {
+  margin: 10px !important;
 }
 
 /*# sourceMappingURL=style.css.map */
