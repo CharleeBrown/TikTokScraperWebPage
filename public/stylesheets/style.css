@@ -43,10 +43,20 @@ select {
 
 button {
   margin: 10px !important;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+button:hover, active {
+  box-shadow: 1px 3px 3px rgba(3, 3, 3, 0.87);
 }
 
 select {
   margin: 10px !important;
+}
+
+select:hover, active {
+  box-shadow: 1px 3px 3px rgba(3, 3, 3, 0.87);
 }
 
 /*# sourceMappingURL=style.css.map */
